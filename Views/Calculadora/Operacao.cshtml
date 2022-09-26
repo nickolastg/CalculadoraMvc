@@ -1,0 +1,8 @@
+@model CalculadoraMvc.Models.Calculadora
+
+@{
+    ViewData["Title"] = $"Resultado de Operação: {@Model.NomeOperacao}";
+}
+
+<h1>Resultado da @Model.NomeOperacao</h1>
+<p>Operação de @Model.NomeOperacao: @Model.Numero1 @Model.Operacao @Model.Numero2 = @Model.Resultado</p>
